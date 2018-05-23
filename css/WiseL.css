@@ -1,0 +1,87 @@
+
+
+/* poiner class for pointer cursor*/
+.pointer {
+	cursor: pointer;
+}
+
+/* our blue text */
+.cent-text-blue {
+	color: #3C3F99;
+}
+
+/* our orange text */
+.cent-text-orange {
+	color: #F7A143;
+}
+
+/* our blue background */
+.cent-bg-blue {
+	background-color: #3C3F99;
+	color: #fff;
+}
+
+/* our orange background */
+.cent-bg-orange {
+	background-color: #F7A143;
+	color: #fff;
+}
+
+.on-hover-grey:hover {
+	background-color: #bdbdbd !important;
+	color: #000 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bootstrap 4.1.0 overwrites */
+.navbar {
+	justify-content: space-between;
+	padding: 0px 0.5rem;
+}
+
+.navbar-brand {
+	font-size: 40px;
+	padding: 0px;
+}
+
+.navbar-toggler {
+	width: 56px;
+	height: 40px;
+}
+
+.fa-lg {
+	vertical-align: 0%;
+}
+
+#side_menu .nav-item .btn {
+	border-radius: 0px;
+}
+
+.collapse .btn:hover {
+	background-color: #bdbdbd;
+	color: #fff;
+}
+
+.btn-light:hover {
+	background-color: #fff;
+}
+
+.btn.focus, .btn:focus {
+	box-shadow: none;
+}
+
+
+
+
+/* Preset Hidden Elements */

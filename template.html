@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>100Cent</title>
+		
+		<!-- link for logo in tab -->
+    	<link rel="shortcut icon" href="img/logos/100Cent_fav.png" />
+
+
+    	<!-- font awesome cdn -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    	<!-- link for importing local style.css file -->
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/100Cent.css">
+    	<link rel="stylesheet" type="text/css" href="css/WiseL.css">
+
+    	
+
+
+	</head>
+
+
+
+	<body>
+
+		<header>
+			<nav class="navbar navbar-light bg-light shadow">
+
+				<a class="pointer font-weight-bold ml-1" onclick="openSideMenu()">
+					MODULES <i class="fa fa-angle-double-right"></i>
+				</a>
+
+				<a class="navbar-brand right font-weight-bold pointer">
+					<tt><span class="cent-text-blue">010</span><span class="cent-text-orange">0</span><span class="cent-text-blue">Cent</span></tt>
+				</a>
+
+				<a class="pointer font-weight-bold mr-1">Sign Out</a>
+
+			</nav>
+
+		</header>
+
+
+		<main>
+			
+			<div class="position-fixed" id="side_menu_background"></div>
+
+			<!-- Side Menu -->
+			<ul class="nav flex-column position-fixed" id="side_menu">
+				<li class="btn btn-light nav-item d-flex align-items-center" id="side_menu_title" onclick="closeSideMenu()">
+					<a class="pointer font-weight-bold ml-1">
+						<i class="fa fa-angle-double-left"></i> MODULES
+					</a>
+				</li>
+			  	<li class="nav-item cent-bg-blue">
+			    	<button class="btn w-100 pl-3 text-left cent-bg-blue text-white" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Academics</button>
+			    	
+			  	</li>
+			  	<div class="collapse" id="collapseExample">
+			    	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Attendance</button>
+			    	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">DPB</button>
+			    	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Attendance1</button>	
+				</div>
+			  	
+			</ul>
+
+		</main>
+
+
+		<footer>
+			
+
+		</footer>
+		
+
+		<!-- jQuery and popperjs cdn -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- local scripts import -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+		<script type="text/javascript">
+
+			function openSideMenu(){
+
+				$('body').addClass('position-fixed');
+				$('#side_menu_background').css('width', '100%');
+				$('#side_menu').css('width', '320px');
+
+				$('#side_menu_background').click(function(){
+					closeSideMenu();
+				});
+				$(document).keyup(function(e){
+                    if (e.keyCode==27) {
+                        closeSideMenu();
+                    }
+                });
+			}
+
+			function closeSideMenu(){
+
+				$('#side_menu').css('width', '0px');
+				$('#side_menu_background').css('width', '0px');
+				$('body').removeClass('position-fixed');
+
+			}
+
+		</script>
+
+	</body>
+</html>

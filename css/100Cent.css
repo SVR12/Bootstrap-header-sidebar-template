@@ -1,0 +1,87 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#index {
+	/*background-color: #e0e0e0;*/
+	background: linear-gradient(to bottom, #3C3F99, #F7A143, #3C3F99);
+}
+
+#index main {
+	height: 100%;
+}
+
+#index .card {
+	padding: 16px 16px 0px 16px;
+	/*-moz-box-shadow:    0 0 80px #bdbdbd;
+   	-webkit-box-shadow: 0 0 80px #bdbdbd;
+   	box-shadow:         0 0 80px #bdbdbd;*/
+}
+
+#index_show_password_span{
+	border-radius: .25rem;
+	position: absolute;
+	color: #bdbdbd;
+	height: 38px;
+	/*margin: 6px;*/
+	padding-top: 6px;
+	margin-right: 6px;
+	right: 8px;
+	z-index: 9;
+}
+
+.form-control:focus {
+	border-color: #F7A143;
+	box-shadow: 0 0 0 0.6px #F7A143;
+}
+
+a:not([href]):not([tabindex]) {
+	color: #F7A143;
+}
+
+a:not([href]):not([tabindex]):hover {
+	color: #3C3F99;
+}
+
+.modal-header {
+	border-bottom: 0px;
+}
+
+.close:not(:disabled):not(.disabled) {
+	position: absolute;
+	right: 16px;
+}
+
+#index_show_password_true {
+	display: none;
+}
+
+#side_menu_background {
+	/*height: calc(100% - 63px);*/
+	height: 100%;
+	width: 0px;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.2);
+	overflow-x: hidden;
+}
+
+#side_menu {
+	/*height: calc(100% - 63px);*/
+	height: 100%;
+	width: 0px;
+	z-index: 5;
+	/*top: 63px;*/
+	top: 0;
+	left: 0;
+	transition: 0.6s;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#side_menu_title {
+	height: 63px;
+}
+
+
+

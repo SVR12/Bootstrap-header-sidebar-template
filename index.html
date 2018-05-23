@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>100Cent</title>
+		
+		<!-- link for logo in tab -->
+    	<link rel="shortcut icon" href="img/logos/100Cent_fav.png" />
+
+    	<!-- link for importing local style.css file -->
+    	
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/100Cent.css">
+    	<link rel="stylesheet" type="text/css" href="css/WiseL.css">
+
+    	<!-- font awesome cdn -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	</head>
+
+
+
+	<body id="index">
+
+
+		<main class="d-flex justify-content-center align-items-center">
+			<div class="card border" style="width: 28rem;">
+			  	<div class="card-body">
+
+			    	<h1 class="card-title font-weight-bold"><span class="cent-text-blue">010</span><span class="cent-text-orange">0</span><span class="cent-text-blue">Cent Sign In</span></h1>
+			    	<form>
+			    		<div class="input-group my-3">
+						  	<input type="email" class="form-control" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group mb-3">
+						  	<input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+						  	<span class="pointer" id="index_show_password_span">
+						  		<i class="fa fa-eye" id="index_show_password_false"></i>
+						  		<i class="fa fa-eye-slash" id="index_show_password_true"></i>
+						  	</span>
+						</div>
+						<button class="btn cent-bg-blue w-100">SIGN IN</button>
+			    	</form>
+			    	<p class="mt-1"><small>Forgot Password? <a class="pointer" data-toggle="modal" data-target="#forgot_password_modal">Click here</a></small></p>
+			  	</div>
+			</div>
+
+		</main>
+
+		<!-- Forgot Password modal -->
+		<div class="modal fade" id="forgot_password_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered" role="document">
+		    	<div class="modal-content">
+		      		<div class="modal-body">
+		      			<button type="button" class="btn btn-link close" data-dismiss="modal" aria-label="Close">
+		          			<span aria-hidden="true">&times;</span>
+		        		</button>
+		      			<h3 class="modal-title text-center cent-text-blue font-weight-bold" id="exampleModalCenterTitle">Forgot Password</h3>
+		      			<p>Type email address to receive reset password mail!</p>
+		        		<form>
+		        			<div class="input-group my-3">
+							  	<input type="email" class="form-control" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+		        		</form>
+		      		</div>
+		    	</div>
+		  	</div>
+		</div>
+
+		<!-- jQuery and popperjs cdn -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+		<!-- local scripts import -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+
+
+	</body>
+</html>
