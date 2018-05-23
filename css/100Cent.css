@@ -1,5 +1,5 @@
 html, body {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 }
 
@@ -63,7 +63,7 @@ a:not([href]):not([tabindex]):hover {
 	width: 0px;
 	z-index: 3;
 	background-color: rgba(0, 0, 0, 0.2);
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 #side_menu {
@@ -81,6 +81,15 @@ a:not([href]):not([tabindex]):hover {
 
 #side_menu_title {
 	height: 63px;
+}
+
+#side_menu_navs {
+	height: calc(100% - 63px);
+	overflow-y: auto;
+}
+
+#side_menu_navs .card-header, #side_menu_navs .card-body {
+	padding: 0px;
 }
 
 

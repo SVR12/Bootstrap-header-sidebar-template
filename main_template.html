@@ -54,23 +54,92 @@
 			<div class="position-fixed" id="side_menu_background"></div>
 
 			<!-- Side Menu -->
-			<ul class="nav flex-column position-fixed" id="side_menu">
-				<li class="btn btn-light nav-item d-flex align-items-center" id="side_menu_title" onclick="closeSideMenu()">
+			<div class="nav d-block position-fixed" id="side_menu">
+				<div class="btn btn-light nav-item d-flex align-items-center" id="side_menu_title" onclick="closeSideMenu()">
 					<a class="pointer font-weight-bold ml-1">
 						<i class="fa fa-angle-double-left"></i> MODULES
 					</a>
-				</li>
-			  	<li class="nav-item cent-bg-blue">
-			    	<button class="btn w-100 pl-3 text-left cent-bg-blue text-white" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Academics</button>
-			    	
-			  	</li>
-			  	<div class="collapse" id="collapseExample">
-			    	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Attendance</button>
-			    	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">DPB</button>
-			    	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Attendance1</button>	
 				</div>
-			  	
-			</ul>
+
+				
+
+				<div id="side_menu_navs">
+
+					<div class="accordion" id="accordion">
+					  	<div class="card">
+					    	<div class="card-header" id="headingOne">
+						      	<h5 class="mb-0">
+						        	<button class="btn w-100 text-left cent-bg-blue rounded-0" type="button" data-toggle="collapse" data-target="#side_menu_navs_academics" aria-expanded="true" aria-controls="side_menu_navs_academics">
+						          	Academics
+						        	</button>
+						      	</h5>
+						    </div>
+
+						    <div id="side_menu_navs_academics" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						      	<div class="card-body">
+						        	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Attendance Management</button>
+								    <button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Student Leave Management</button>
+								   	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Daily Advance Planning Book</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Time Table</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Tests Management</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Documents & Notes Sharing</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Course Evaluation</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Student Remarks</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Proxy Management</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Academic Announcements</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Students weak topics</button>
+						      	</div>
+						    </div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="headingOne">
+						      	<h5 class="mb-0">
+						        	<button class="btn w-100 text-left cent-bg-blue rounded-0" type="button" data-toggle="collapse" data-target="#side_menu_navs_non_academics" aria-expanded="true" aria-controls="side_menu_navs_non_academics">
+						          	Non Academics
+						        	</button>
+						      	</h5>
+						    </div>
+
+						    <div id="side_menu_navs_non_academics" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						      	<div class="card-body">
+						        	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Events Calendar</button>
+								    <button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Events Gallery</button>
+								   	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Parents-Teachers meetings</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Internal Meetings</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Scholarships</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Student Achievements</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Teacher Achievements</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">School Achievements</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Student Representatives</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">House Management</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Student Warnings</button>
+									<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Student of the Month</button>
+						      	</div>
+						    </div>
+					  	</div>
+
+					  	<div class="card">
+					    	<div class="card-header" id="headingOne">
+						      	<h5 class="mb-0">
+						        	<button class="btn w-100 text-left cent-bg-blue rounded-0" type="button" data-toggle="collapse" data-target="#side_menu_navs_accounts" aria-expanded="true" aria-controls="side_menu_navs_accounts">
+						          	Accounts
+						        	</button>
+						      	</h5>
+						    </div>
+
+						    <div id="side_menu_navs_accounts" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						      	<div class="card-body">
+						        	<button class="btn btn-sm pl-4 w-100 on-hover-white text-left rounded-0">Fees Management</button>
+						      	</div>
+						    </div>
+					  	</div>
+
+					  	
+					</div>
+
+				</div>
+			</div>
 
 		</main>
 
@@ -95,7 +164,7 @@
 
 				$('body').addClass('position-fixed');
 				$('#side_menu_background').css('width', '100%');
-				$('#side_menu').css('width', '320px');
+				$('#side_menu').css('width', '400px');
 
 				$('#side_menu_background').click(function(){
 					closeSideMenu();
