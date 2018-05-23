@@ -58,8 +58,8 @@ a:not([href]):not([tabindex]):hover {
 }
 
 #side_menu_background {
-	/*height: calc(100% - 63px);*/
-	height: 100%;
+	height: calc(100% - 63px);
+	/*height: 100%;*/
 	width: 0px;
 	z-index: 3;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -91,6 +91,4 @@ a:not([href]):not([tabindex]):hover {
 #side_menu_navs .card-header, #side_menu_navs .card-body {
 	padding: 0px;
 }
-
-
 

@@ -141,13 +141,72 @@
 				</div>
 			</div>
 
+
+			<!-- Container -->
+			<div class="container-fluid mt-2 mb-5 pb-2" id="content">
+				<div class="row">
+
+					<!-- card -->
+					<div class="col-md-6 col-lg-4 col-xl-3 my-1">
+						<div class="card cent-card">
+							<div class="card-header">CARD TYPE/NAME</div>
+							<div class="card-body">
+								<p>Detail 1</p>
+								<p>Detail 2</p>
+								<p>Detail 3</p>
+								<p>Detail 4</p>
+								<p>Detail 5</p>
+								<p>Detail 6</p>
+								<p>Detail 7</p>
+								<p>Detail 8</p>
+							</div>
+							<div class="card-footer d-flex justify-content-between">
+								<span class="ml-2 mt-1 cent-text-orange" disbaled>21 May, 2019</span>
+								<button class="btn btn-sm mx-1 btn-success" id="card_id_details" onclick="openCardModal(this.id)">VIEW DETAILS</button>
+							</div>
+						</div>
+					</div>
+
+					
+
+				</div>	
+			</div>
+			
+
+
+
+
+
 		</main>
 
 
-		<footer>
-			
-
+		<footer class="position-fixed">
+			<nav class="navbar bg-dark py-2">
+				<button class="btn btn-sm mx-2">BUTTON 1</button>
+				<button class="btn btn-sm mx-2">BUTTON 2</button>
+			</nav>
 		</footer>
+
+		<!-- Card Modal -->
+		<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered" role="document">
+		    	<div class="modal-content">
+		      		<div class="modal-header">
+		        		<h5 class="modal-title">Card Type</h5>
+		        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          			<span aria-hidden="true">&times;</span>
+		        		</button>
+		      		</div>
+		      		<div class="modal-body">
+		       			<p>This is modal Body</p>
+		   			</div>
+		      		<div class="modal-footer">
+		        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        		<button type="button" class="btn btn-primary">Save changes</button>
+		      		</div>
+		    	</div>
+		  	</div>
+		</div>
 		
 
 		<!-- jQuery and popperjs cdn -->
@@ -159,6 +218,10 @@
 		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 
 		<script type="text/javascript">
+
+			$(document).ready(function(){
+				// $('.modal').modal();
+			});
 
 			function openSideMenu(){
 
@@ -182,6 +245,11 @@
 				$('#side_menu_background').css('width', '0px');
 				$('body').removeClass('position-fixed');
 
+			}
+
+			function openCardModal(id){
+				console.log(id);
+				$('#cardModal').modal();
 			}
 
 		</script>

@@ -16,7 +16,8 @@
 }
 
 /* our blue background */
-.cent-bg-blue {
+.cent-bg-blue,
+.cent-card .card-header {
 	background-color: #3C3F99;
 	color: #fff;
 }
@@ -32,7 +33,23 @@
 	color: #000 !important;
 }
 
+.cent-card .card-header, .cent-card .card-body, .cent-card .card-footer {
+	overflow: hidden;
+}
 
+.cent-card .card-header {
+	height: 49px;
+}
+
+.cent-card .card-body {
+	height: 120px;
+}
+
+.cent-card .card-footer {
+	padding: 8px 4px;
+	border: 0px;
+	background-color: transparent;
+}
 
 
 
@@ -65,7 +82,7 @@
 }
 
 #side_menu .nav-item .btn {
-	border-radius: 0px;
+	border-radius: 0px !important;
 }
 
 .collapse .btn:hover {
@@ -81,6 +98,14 @@
 	box-shadow: none;
 }
 
+footer {
+	width: 100%;
+	bottom: 0;
+}
+
+footer .navbar {
+	justify-content: flex-end;
+}
 
 
 
